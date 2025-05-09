@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="scoreboard">
+    <div class="team" id="homeTeam">
+      <h2>HOME</h2>
+      <div class="score" id="homeScore">0</div>
+      <div class="buttons">
+        <button onclick="updateScore('home', 1)">+1</button>
+        <button onclick="updateScore('home', 2)">+2</button>
+        <button onclick="updateScore('home', 3)">+3</button>
+      </div>
+    </div>
+
+    <div class="team" id="guestTeam">
+      <h2>GUEST</h2>
+      <div class="score" id="guestScore">0</div>
+      <div class="buttons">
+        <button onclick="updateScore('guest', 1)">+1</button>
+        <button onclick="updateScore('guest', 2)">+2</button>
+        <button onclick="updateScore('guest', 3)">+3</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="extra">
+    <p>Period: <span id="period">1</span></p>
+    <p>Fouls – Home: <span id="homeFouls">0</span> | Guest: <span id="guestFouls">0</span></p>
+    <p class="timer">Timer: <span id="timer">00:00</span></p>
+    <button onclick="addFoul('home')">Add Home Foul</button>
+    <button onclick="addFoul('guest')">Add Guest Foul</button>
+    <button onclick="nextPeriod()">Next Period</button>
+  </div>
+
+  <div class="new-game">
+    <button onclick="newGame()">New Game</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #fef6ff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 0;
+}
+
+.scoreboard {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  gap: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 2px solid #f0d5f9;
+  transition: all 0.1s ease;
+}
+
+.team {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+  transition: background 0.3s ease;
+}
+
+.team.leader {
+  background-color: #ffe6fa;
+  border: 2px dashed #e188f5;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #7a3e9d;
+  font-size: 24px;
+}
+
+.score {
+  font-size: 64px;
+  margin: 15px 0;
+  color: #f06292;
+  font-weight: 700;
+}
+
+.buttons button {
+  margin: 5px;
+  font-size: 18px;
+  padding: 10px 16px;
+  border: none;
+  background: #ffebf5;
+  color: #8a4f7d;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buttons button:hover {
+  background: #f8c7e6;
+  color: #ffffff;
+}
+
+.extra {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.extra p {
+  margin: 8px 0;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.extra button,
+.new-game button {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #e0bbf7;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(142, 36, 170, 0.2);
+  transition: background 0.3s ease;
+}
+
+.extra button:hover,
+.new-game button:hover {
+  background: #d68bff;
+}
+
+.new-game {
+  margin-top: 40px;
+}
