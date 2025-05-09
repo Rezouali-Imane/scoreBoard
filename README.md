@@ -1,19 +1,34 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Scoreboard JS Counter
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+ a simple scoreboard counter for tracking game scores, fouls, and periods. It includes a live timer to track the game time and features for resetting the game, switching periods, and updating scores and fouls for two teams (home and guest).
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## Features
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- Track scores for two teams (home and guest).
+- Count fouls for both teams.
+- Track periods of the game.
+- Display a timer that increments every second (in MM:SS format).
+- Dynamically highlight the leading team.
+- Reset game stats and start a new game.
 
-Happy Coding!
+## Functions
+
+### `updateScore(team, points)`
+- Updates the score for the specified team.
+- **Parameters:**
+  - `team` (string): Either `'home'` or `'guest'`.
+  - `points` (number): Points to add to the team's score.
+  
+### `addFoul(team)`
+- Adds one foul to the specified team's foul count.
+- **Parameters:**
+  - `team` (string): Either `'home'` or `'guest'`.
+
+### `nextPeriod()`
+- Increments the period number and updates the display.
+
+### `newGame()`
+- Resets all scores, fouls, periods, and the timer to start a new game.
+
+### Timer Logic
+- The timer increments every second and updates the display in `MM:SS` format.
